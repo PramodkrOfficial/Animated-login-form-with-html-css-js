@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-image: url('./naturebg1.jpg');
+    background-position: bottom;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    align-items: center;
+}
+
+h1 {
+    padding-left: 35px;
+    font-size: 30px;
+    color: #fff;
+    transition: color 1s;
+}
+
+h1:hover {
+    color: #000;
+    font-weight: bold;
+}
+
+.links {
+    padding: 40px;
+
+}
+
+.links a,
+button {
+    margin: 0px 20px;
+    position: relative;
+    font-size: 20px;
+    color: #fff;
+}
+
+
+button {
+    color: #000;
+}
+
+nav a:hover::before {
+    content: '';
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    background-color: #fff;
+    bottom: -30%;
+}
+
+button {
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 10px;
+    transition: background-color 1s;
+
+}
+
+#login {
+    height: 50px;
+    width: 80px;
+}
+
+#register {
+    height: 50px;
+    width: 100px;
+}
+
+button:hover {
+    border: 2px solid whitesmoke;
+    background-color: #fff;
+    color: #000;
+}
+
+.main {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+
+.registration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    width: 400px;
+    border: 2px solid whitesmoke;
+    border-radius: 8px;
+    backdrop-filter: blur(20px);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(0) translateX(800px);
+    transition: 1s;
+    
+
+}
+
+.active_register .registration {
+    transform: translateX(-50%) scale(1);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"] {
+    width: 300px;
+    height: 40px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #000;
+    caret-color: red;
+    margin: 16px;
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+input::placeholder {
+    color: whitesmoke;
+}
+
+input[type="submit"] {
+    width: 300px;
+    height: 40px;
+    margin-top: 16px;
+    font-size: 15px;
+}
+
+.terms {
+    margin: 16px 0px;
+}
+
+input[type="submit"] {
+    width: 300px;
+    height: 40px;
+    font-size: 15px;
+    outline: none;
+    border-radius: 8px;
+    border: none;
+    margin: 8px 0px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.login {
+    height: 370px;
+    width: 400px;
+    border: 2px solid whitesmoke;
+    border-radius: 8px;
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    transform: scale(0) translateX(-800px);
+    transition: 1s;
+}
+
+.active_login .login {
+    transform: scale(1);
+}
+
+.Remember-Forgot {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 16px 0px;
+}
+
+p {
+    display: inline-block;
+}
+
+.main a {
+    color: #000;
+    font-weight: bold;
+}
